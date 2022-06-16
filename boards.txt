@@ -7480,6 +7480,177 @@ adafruit_feather_esp32s3.menu.DebugLevel.verbose.build.code_debug=5
 
 ##############################################################
 
+adafruit_feather_esp32s3_psram.name=Adafruit Feather ESP32-S3 4MB Flash 2MB PSRAM
+adafruit_feather_esp32s3_psram.vid.0=0x239A
+adafruit_feather_esp32s3_psram.pid.0=0x8113
+adafruit_feather_esp32s3_psram.vid.1=0x239A
+adafruit_feather_esp32s3_psram.pid.1=0x0113
+adafruit_feather_esp32s3_psram.vid.1=0x239A
+adafruit_feather_esp32s3_psram.pid.1=0x8114
+
+adafruit_feather_esp32s3_psram.bootloader.tool=esptool_py
+adafruit_feather_esp32s3_psram.bootloader.tool.default=esptool_py
+
+adafruit_feather_esp32s3_psram.upload.tool=esptool_py
+adafruit_feather_esp32s3_psram.upload.tool.default=esptool_py
+adafruit_feather_esp32s3_psram.upload.tool.network=esp_ota
+
+adafruit_feather_esp32s3_psram.upload.maximum_size=1310720
+adafruit_feather_esp32s3_psram.upload.maximum_data_size=327680
+adafruit_feather_esp32s3_psram.upload.flags=
+adafruit_feather_esp32s3_psram.upload.extra_flags=
+adafruit_feather_esp32s3_psram.upload.use_1200bps_touch=true
+adafruit_feather_esp32s3_psram.upload.wait_for_upload_port=true
+
+adafruit_feather_esp32s3_psram.serial.disableDTR=false
+adafruit_feather_esp32s3_psram.serial.disableRTS=false
+
+adafruit_feather_esp32s3_psram.build.tarch=xtensa
+adafruit_feather_esp32s3_psram.build.bootloader_addr=0x0
+adafruit_feather_esp32s3_psram.build.target=esp32s3
+adafruit_feather_esp32s3_psram.build.mcu=esp32s3
+adafruit_feather_esp32s3_psram.build.core=esp32
+adafruit_feather_esp32s3_psram.build.variant=adafruit_feather_esp32s3_nopsram
+adafruit_feather_esp32s3_psram.build.board=ADAFRUIT_FEATHER_ESP32S3_NOPSRAM
+
+adafruit_feather_esp32s3_psram.build.usb_mode=1
+adafruit_feather_esp32s3_psram.build.cdc_on_boot=1
+adafruit_feather_esp32s3_psram.build.msc_on_boot=0
+adafruit_feather_esp32s3_psram.build.dfu_on_boot=0
+adafruit_feather_esp32s3_psram.build.f_cpu=240000000L
+adafruit_feather_esp32s3_psram.build.flash_size=4MB
+adafruit_feather_esp32s3_psram.build.flash_freq=80m
+adafruit_feather_esp32s3_psram.build.flash_mode=dio
+adafruit_feather_esp32s3_psram.build.boot=qio
+adafruit_feather_esp32s3_psram.build.partitions=default
+adafruit_feather_esp32s3_psram.build.defines=
+adafruit_feather_esp32s3_psram.build.loop_core=
+adafruit_feather_esp32s3_psram.build.event_core=
+adafruit_feather_esp32s3_psram.build.flash_type=qspi
+adafruit_feather_esp32s3_psram.build.psram_type=qspi
+adafruit_feather_esp32s3_psram.build.memory_type={build.flash_type}_{build.psram_type}
+
+adafruit_feather_esp32s3_psram.menu.FlashMode.qio=QIO 80MHz
+adafruit_feather_esp32s3_psram.menu.FlashMode.qio.build.flash_mode=dio
+adafruit_feather_esp32s3_psram.menu.FlashMode.qio.build.boot=qio
+adafruit_feather_esp32s3_psram.menu.FlashMode.qio.build.boot_freq=80m
+adafruit_feather_esp32s3_psram.menu.FlashMode.qio.build.flash_freq=80m
+adafruit_feather_esp32s3_psram.menu.FlashMode.qio.build.flash_type=qspi
+adafruit_feather_esp32s3_psram.menu.FlashMode.qio120=QIO 120MHz
+adafruit_feather_esp32s3_psram.menu.FlashMode.qio120.build.flash_mode=dio
+adafruit_feather_esp32s3_psram.menu.FlashMode.qio120.build.boot=qio
+adafruit_feather_esp32s3_psram.menu.FlashMode.qio120.build.boot_freq=120m
+adafruit_feather_esp32s3_psram.menu.FlashMode.qio120.build.flash_freq=80m
+adafruit_feather_esp32s3_psram.menu.FlashMode.qio120.build.flash_type=qspi
+adafruit_feather_esp32s3_psram.menu.FlashMode.dio=DIO 80MHz
+adafruit_feather_esp32s3_psram.menu.FlashMode.dio.build.flash_mode=dio
+adafruit_feather_esp32s3_psram.menu.FlashMode.dio.build.boot=dio
+adafruit_feather_esp32s3_psram.menu.FlashMode.dio.build.boot_freq=80m
+adafruit_feather_esp32s3_psram.menu.FlashMode.dio.build.flash_freq=80m
+adafruit_feather_esp32s3_psram.menu.FlashMode.dio.build.flash_type=qspi
+adafruit_feather_esp32s3_psram.menu.FlashMode.opi=OPI 80MHz
+adafruit_feather_esp32s3_psram.menu.FlashMode.opi.build.flash_mode=dout
+adafruit_feather_esp32s3_psram.menu.FlashMode.opi.build.boot=opi
+adafruit_feather_esp32s3_psram.menu.FlashMode.opi.build.boot_freq=80m
+adafruit_feather_esp32s3_psram.menu.FlashMode.opi.build.flash_freq=80m
+adafruit_feather_esp32s3_psram.menu.FlashMode.opi.build.flash_type=opi
+
+adafruit_feather_esp32s3_psram.menu.LoopCore.1=Core 1
+adafruit_feather_esp32s3_psram.menu.LoopCore.1.build.loop_core=-DARDUINO_RUNNING_CORE=1
+adafruit_feather_esp32s3_psram.menu.LoopCore.0=Core 0
+adafruit_feather_esp32s3_psram.menu.LoopCore.0.build.loop_core=-DARDUINO_RUNNING_CORE=0
+
+adafruit_feather_esp32s3_psram.menu.EventsCore.1=Core 1
+adafruit_feather_esp32s3_psram.menu.EventsCore.1.build.event_core=-DARDUINO_EVENT_RUNNING_CORE=1
+adafruit_feather_esp32s3_psram.menu.EventsCore.0=Core 0
+adafruit_feather_esp32s3_psram.menu.EventsCore.0.build.event_core=-DARDUINO_EVENT_RUNNING_CORE=0
+
+adafruit_feather_esp32s3_psram.menu.USBMode.default=USB-OTG (TinyUSB)
+adafruit_feather_esp32s3_psram.menu.USBMode.default.build.usb_mode=0
+adafruit_feather_esp32s3_psram.menu.USBMode.hwcdc=Hardware CDC and JTAG
+adafruit_feather_esp32s3_psram.menu.USBMode.hwcdc.build.usb_mode=1
+
+adafruit_feather_esp32s3_psram.menu.CDCOnBoot.cdc=Enabled
+adafruit_feather_esp32s3_psram.menu.CDCOnBoot.cdc.build.cdc_on_boot=1
+adafruit_feather_esp32s3_psram.menu.CDCOnBoot.default=Disabled
+adafruit_feather_esp32s3_psram.menu.CDCOnBoot.default.build.cdc_on_boot=0
+
+adafruit_feather_esp32s3_psram.menu.MSCOnBoot.default=Disabled
+adafruit_feather_esp32s3_psram.menu.MSCOnBoot.default.build.msc_on_boot=0
+adafruit_feather_esp32s3_psram.menu.MSCOnBoot.msc=Enabled (Requires USB-OTG Mode)
+adafruit_feather_esp32s3_psram.menu.MSCOnBoot.msc.build.msc_on_boot=1
+
+adafruit_feather_esp32s3_psram.menu.DFUOnBoot.default=Disabled
+adafruit_feather_esp32s3_psram.menu.DFUOnBoot.default.build.dfu_on_boot=0
+adafruit_feather_esp32s3_psram.menu.DFUOnBoot.dfu=Enabled (Requires USB-OTG Mode)
+adafruit_feather_esp32s3_psram.menu.DFUOnBoot.dfu.build.dfu_on_boot=1
+
+adafruit_feather_esp32s3_psram.menu.UploadMode.cdc=USB-OTG CDC (TinyUSB)
+adafruit_feather_esp32s3_psram.menu.UploadMode.cdc.upload.use_1200bps_touch=true
+adafruit_feather_esp32s3_psram.menu.UploadMode.cdc.upload.wait_for_upload_port=true
+adafruit_feather_esp32s3_psram.menu.UploadMode.default=UART0 / Hardware CDC
+adafruit_feather_esp32s3_psram.menu.UploadMode.default.upload.use_1200bps_touch=false
+adafruit_feather_esp32s3_psram.menu.UploadMode.default.upload.wait_for_upload_port=false
+
+adafruit_feather_esp32s3_psram.menu.PartitionScheme.tinyuf2=TinyUF2 8MB (2MB APP/3.6MB FFAT)
+adafruit_feather_esp32s3_psram.menu.PartitionScheme.tinyuf2.build.custom_bootloader=bootloader-tinyuf2
+adafruit_feather_esp32s3_psram.menu.PartitionScheme.tinyuf2.build.custom_partitions=partitions-8MB-tinyuf2
+adafruit_feather_esp32s3_psram.menu.PartitionScheme.tinyuf2.upload.maximum_size=2097152
+adafruit_feather_esp32s3_psram.menu.PartitionScheme.tinyuf2.upload.extra_flags=0x410000 "{runtime.platform.path}/variants/{build.variant}/tinyuf2.bin"
+adafruit_feather_esp32s3_psram.menu.PartitionScheme.default_8MB=8M Flash (3MB APP/1.5MB SPIFFS)
+adafruit_feather_esp32s3_psram.menu.PartitionScheme.default_8MB.build.partitions=default_8MB
+adafruit_feather_esp32s3_psram.menu.PartitionScheme.default_8MB.upload.maximum_size=3342336
+
+# Added these
+adafruit_feather_esp32s3_psram.menu.PartitionScheme.default_4MB=Default 4MB with spiffs (1.2MB APP/1.5MB SPIFFS)
+adafruit_feather_esp32s3_psram.menu.PartitionScheme.default_4MB.build.partitions=default
+adafruit_feather_esp32s3_psram.menu.PartitionScheme.default_4MB.upload.maximum_size=1310720
+adafruit_feather_esp32s3_psram.menu.PartitionScheme.default_4MB.upload.maximum_data_size=327680
+
+adafruit_feather_esp32s3_psram.menu.CPUFreq.240=240MHz (WiFi)
+adafruit_feather_esp32s3_psram.menu.CPUFreq.240.build.f_cpu=240000000L
+adafruit_feather_esp32s3_psram.menu.CPUFreq.160=160MHz (WiFi)
+adafruit_feather_esp32s3_psram.menu.CPUFreq.160.build.f_cpu=160000000L
+adafruit_feather_esp32s3_psram.menu.CPUFreq.80=80MHz (WiFi)
+adafruit_feather_esp32s3_psram.menu.CPUFreq.80.build.f_cpu=80000000L
+adafruit_feather_esp32s3_psram.menu.CPUFreq.40=40MHz
+adafruit_feather_esp32s3_psram.menu.CPUFreq.40.build.f_cpu=40000000L
+adafruit_feather_esp32s3_psram.menu.CPUFreq.20=20MHz
+adafruit_feather_esp32s3_psram.menu.CPUFreq.20.build.f_cpu=20000000L
+adafruit_feather_esp32s3_psram.menu.CPUFreq.10=10MHz
+adafruit_feather_esp32s3_psram.menu.CPUFreq.10.build.f_cpu=10000000L
+
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.921600=921600
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.921600.upload.speed=921600
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.115200=115200
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.115200.upload.speed=115200
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.256000.windows=256000
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.256000.upload.speed=256000
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.230400.windows.upload.speed=256000
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.230400=230400
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.230400.upload.speed=230400
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.460800.linux=460800
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.460800.macosx=460800
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.460800.upload.speed=460800
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.512000.windows=512000
+adafruit_feather_esp32s3_psram.menu.UploadSpeed.512000.upload.speed=512000
+
+adafruit_feather_esp32s3_psram.menu.DebugLevel.none=None
+adafruit_feather_esp32s3_psram.menu.DebugLevel.none.build.code_debug=0
+adafruit_feather_esp32s3_psram.menu.DebugLevel.error=Error
+adafruit_feather_esp32s3_psram.menu.DebugLevel.error.build.code_debug=1
+adafruit_feather_esp32s3_psram.menu.DebugLevel.warn=Warn
+adafruit_feather_esp32s3_psram.menu.DebugLevel.warn.build.code_debug=2
+adafruit_feather_esp32s3_psram.menu.DebugLevel.info=Info
+adafruit_feather_esp32s3_psram.menu.DebugLevel.info.build.code_debug=3
+adafruit_feather_esp32s3_psram.menu.DebugLevel.debug=Debug
+adafruit_feather_esp32s3_psram.menu.DebugLevel.debug.build.code_debug=4
+adafruit_feather_esp32s3_psram.menu.DebugLevel.verbose=Verbose
+adafruit_feather_esp32s3_psram.menu.DebugLevel.verbose.build.code_debug=5
+
+
+##############################################################
+
 adafruit_qtpy_esp32s3.name=Adafruit QT Py ESP32-S3 No PSRAM
 adafruit_qtpy_esp32s3.vid.0=0x239A
 adafruit_qtpy_esp32s3.pid.0=0x8119
